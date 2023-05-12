@@ -1,0 +1,37 @@
+@use'../abstract/mixins' as *;
+@use '../abstract/variables' as *;
+
+
+.projects{
+position: sticky;
+top: 0;
+background: $bg-color;
+width: 100%;
+height: 100vh; 
+padding: 0 120px 100px;
+
+    .projects__ellipse{
+	 @include background-glow;
+	}
+	
+	.projects__heading{
+	 @include page-heading;
+	}
+}
+
+
+ @keyframes pulse{
+ 0%{
+  transform: scale(0.5);
+  transform: translateY(0);
+ }
+ 50%{
+  transform: scale(1.1);
+  transform: translateY(100px);
+ }
+ 100%{
+   transform: scale(0.5);
+   transform: translateY(0);
+ }
+
+ }

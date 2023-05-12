@@ -1,0 +1,26 @@
+@use '../abstract/variables' as *;
+@use '../abstract/mixins' as *;
+
+.go-to-home{
+ position: absolute;
+ text-align: center;
+ padding-top: 10px;
+ right: 50px;
+ width: 30px;
+ height: 30px;
+ background: rgba(159, 163, 255, 0.5);
+ color: $font-color-white;
+ border-radius: 0 0 10px 10px;
+ opacity: 30%;
+ cursor: default;
+ 
+    &:hover{
+	 opacity: 50%;
+	 height: 32px;
+	 transition: all 500ms;
+	}
+	&:active{
+	 height: 0;
+	 transition: all 0.5s;
+	}
+}

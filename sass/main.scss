@@ -1,0 +1,14 @@
+/*---base--*/
+@use'base/base';
+
+/*---layout---*/
+@use'layout/navbar';
+@use'layout/footer';
+
+/*---pages---*/
+@use'pages/mainpage';
+@use'pages/aboutmepage';
+@use'pages/projectspage';
+
+
+@use'components/homebutton';

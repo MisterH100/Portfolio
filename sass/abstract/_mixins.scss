@@ -1,0 +1,40 @@
+@use 'variables' as *;
+
+@mixin flex($direction:row, $space:space-between){
+	 display: flex;
+	 justify-content: center;
+	 justify-content: $space;
+	 align-items: center;
+	 flex-direction: $direction;
+ 
+	}
+
+@mixin page-heading{
+	 margin-top: 20px;
+	 text-align: center;
+	 color: $font-color-white;
+	 font-style: normal;
+	 font-weight: 700;
+	 font-size: 64px;
+	 line-height: 96px;
+	 letter-spacing: 0.03em;
+	 text-decoration-line: underline;
+	}
+	
+@mixin background-glow{
+     position: absolute;
+	 width: $background-ellipse-size;
+	 height: $background-ellipse-size;
+	 left: 100px;
+	 top: 0;
+	 background: rgba(159, 163, 255, 0.4);
+	 filter: blur(100px);
+	 animation: pulse 5s linear 10s infinite;
+	 
+	 
+		&--right{
+		
+		 left: 80%;
+         top: 80%;
+		}
+}

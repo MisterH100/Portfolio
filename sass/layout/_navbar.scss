@@ -1,0 +1,78 @@
+@use '../abstract/mixins' as *;
+@use '../abstract/variables' as *;
+
+.header{
+ position: sticky;
+ top: 0;
+ @include flex();
+ padding: 25px 120px;
+ background: $bg-color-dark;
+ 
+    .header__logo{
+	 position: relative;
+	 color: $font-color-white;
+	 font-style: normal;
+     font-weight: 700;
+     font-size: 40px;
+     line-height: 60px;
+     letter-spacing: 0.03em;
+	   
+	    span{
+		 color: $font-color-red;
+		
+		}
+        
+		.special{
+		 font-size: 0.7rem;
+		 color: $font-color-white;
+		 position: absolute;
+		 top: 25px;
+		 left: 4px;
+		 opacity: 60%;
+		}
+	}
+    .nav__list{
+	 @include flex();
+	 gap: 34px;
+	 list-style: none;
+	 
+	    .nav__item{
+		 position: relative;
+		 transition: all 1s ease-in-out;
+		 
+		    &::before{
+			 content: '';
+			 background: $font-color-white;
+			 position: absolute;
+			 bottom: -6px;
+			 width: 0;
+			 height: 2px;
+			 transition: width 0.3s ease-in-out;
+			}
+		   
+		    &:hover {
+			 background: linear-gradient(90deg, $font-color-red -29.69%, $font-color-blue 100%);
+             -webkit-background-clip: text;
+             -webkit-text-fill-color: transparent;
+			  transition: color 0.5s ease-in-out;
+			    
+				&::before{
+				 width: 100%;
+				 transition: width 0.2s ease-in-out;
+				}
+			}
+		}
+	   
+	    a{
+		 color: $font-color-white;
+		 text-decoration: none;
+		 font-style: normal;
+         font-weight: 700;
+         font-size: 20px;
+         line-height: 30px;
+         letter-spacing: 0.03em;
+		 
+		   
+		}
+	}
+}
