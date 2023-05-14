@@ -1,16 +1,13 @@
 @use '../abstract/variables' as *;
 
 html{
-  scroll-behavior: smooth;
+ scroll-behavior: smooth;
+ background: $bg-color;
 }
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: $font-stack;
-  border: 1px dotted #f00; /* design purposes only*/
-}
-
-body{
- background: $bg-color;
+  /*border: 1px dotted #f00;  design purposes only*/
 }

@@ -3,10 +3,12 @@
 
 .header{
  position: sticky;
+ width: 100vw;
  top: 0;
  @include flex();
  padding: 25px 120px;
  background: $bg-color-dark;
+ overflow: hidden;
  
     .header__logo{
 	 position: relative;

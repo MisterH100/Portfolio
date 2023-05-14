@@ -6,7 +6,50 @@
 position: sticky;
 top: 0;
 background: $bg-color-dark;
-width: 100%;
+width: 100vw;
 height: 100vh; 
 padding: 0 120px 100px;
+overflow: hidden;
+
+    .hire__heading{
+	 @include page-heading;
+	}
+	
+	.hire__box{
+	 width: 60%;
+	 height: 10%;
+	 padding-left: 60px;
+	 margin: 20px auto;
+	 @include flex;
+	 justify-content: left;
+	 gap: 2rem;
+	 color: $font-color-white;
+	    
+		a{
+		 color: $font-color-blue;
+		 text-decoration: none;
+		 font-size: 1em;
+		}
+	}
+	
+	.footer__base{
+	 position: absolute;
+	 bottom: 0;
+	 left: 0;
+	 width: 100vw;
+	 height: 50%;
+	 background: $bg-color-light;
+	 @include flex;
+	 align-items: flex-start;
+	 padding: 20px 20%;
+	}
+	
+	.footer__base-wrapper a{
+	 text-align: center;
+	 text-decoration: none;
+	 margin-top: 10px;
+	 display: block;
+	 color: $font-color-black;
+	 opacity: 60%;
+	}
 }

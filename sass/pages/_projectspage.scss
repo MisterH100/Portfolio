@@ -6,9 +6,10 @@
 position: sticky;
 top: 0;
 background: $bg-color;
-width: 100%;
+width: 100vw;
 height: 100vh; 
 padding: 0 120px 100px;
+overflow: hidden;
 
     .projects__ellipse{
 	 @include background-glow;

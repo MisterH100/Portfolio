@@ -1,0 +1,27 @@
+@use'../abstract/mixins' as *;
+@use '../abstract/variables' as *;
+
+.icon{
+ width: 50px;
+ height: 50px;
+ border-radius: 100%;
+ font-size: 2em;
+ text-align: center;
+ color: $font-color-white;
+   
+   
+    &--skill{
+	 width: 60px;
+     height: 60px;
+	 background: $bg-color;
+	 position: absolute;
+	 padding-top: 16px;
+	 left: -4px;
+	 transition: all 0.5s linear;
+	   
+	    &:hover{
+		 transform: scale(1.1);
+		 transition: all 0.5s linear;
+		}
+	}
+}
